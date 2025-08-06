@@ -17,3 +17,8 @@ jobs:
       run: |
         echo "Good"
         echo "morning"
+      
+    - name: secret 값 설정
+      run: 
+        echo ${{ secrets.MY_NAME }}
+        echo ${{ secrets.MY_HOBBY }}
